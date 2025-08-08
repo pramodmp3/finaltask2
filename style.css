@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: auto;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #0b274f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar > .navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar > .navlinks > a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar > .navlinks > a > .down {
+    width: 10px;
+    height: 10px;
+    fill: white;
+}
+
+.navbar > img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar > .quote,
+.section > .buttons > button,
+.section4 > .topele > .buttons > button {
+    background-color: blue;
+    border-radius: 25px;
+    padding: 13px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.navbar > .moonsvg {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    padding: 40px 5%;
+    background-color: #0b274f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* 🔁 Girl image shown in each section */
+.section > .girl {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.section > .imgsec {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section > .imgsec > img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.section > .texts {
+    flex-grow: 1;
+    min-width: 280px;
+}
+
+.section > .texts > h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.section > .texts > h1 > span {
+    color: #015adc;
+}
+
+.section > .texts > p {
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.section > .svgsocial {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.section > .svgsocial > svg {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: 50px auto;
+}
+
+.services > .icon {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services h3 {
+    color: #015adc;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.services p {
+    font-size: 13px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.services > .icon > svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.section3 > h2,
+.section4 > .topele > h2,
+.section5 > .text > h2 {
+    color: #035bdc;
+    text-align: center;
+}
+
+.section3 > p,
+.section4 > .topele > p,
+.section5 > .text > p {
+    color: #c27e41;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.why {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.why > .child1,
+.why > .child2,
+.why > .child3 {
+    text-align: center;
+}
+
+.section4 > .topele {
+    padding: 100px 20px;
+}
+
+.section4 > .topele > .buttons {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 0;
+}
+
+.port {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px 20px;
+}
+
+.port img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section5 > .text {
+    padding: 100px 20px;
+}
+
+.head {
+    text-align: center;
+    font-size: medium;
+}
+
+.price {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 50px 20px;
+}
+
+.price > .basic,
+.price > .premium,
+.price > .standard {
+    background-color: aliceblue;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.price svg {
+    height: 20px;
+    width: 20px;
+}
+
+.price .list li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.price .order {
+    background-color: #015adc;
+    padding: 10px;
+    font-size: 9px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: none;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.section3>img{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+    
+}
+
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .navbar > .navlinks {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .section {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .section > .texts > p {
+        width: 100%;
+    }
+
+    .section4 > .topele,
+    .section5 > .text {
+        padding: 50px 20px !important;
+    }
+
+    .section > .girl {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .section > .texts > h1 {
+        font-size: 20px;
+    }
+
+    .navbar > img {
+        width: 100px;
+    }
+
+    .section > .svgsocial > svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .navbar > .quote {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+  .why {
+    grid-template-columns: 1fr; /* stack the children vertically */
+    gap: 15px;
+    padding: 10px;
+    margin: 30px 10px;
+  }
+
+  .why > .child1,
+  .why > .child2,
+  .why > .child3 {
+    text-align: center;
+  }
+
+  /* Optional: If images are used inside these children and need resizing */
+  .why img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .why {
+    grid-template-columns: 1fr; /* stack the children vertically */
+    gap: 15px;
+    padding: 10px;
+    margin: 30px 10px;
+  }
+
+  .why > .child1,
+  .why > .child2,
+  .why > .child3 {
+    text-align: center;
+  }
+
+  /* Optional: If images are used inside these children and need resizing */
+  .why img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
